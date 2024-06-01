@@ -69,13 +69,13 @@ Install develop branch using straight.
          ("C-c s C-l" . org-super-links-insert-link)))
 #+end_src
 
-You can also use [[https://github.com/quelpa/quelpa][quelpa]]. Example basic configuration using quelpa:
+You can also use [[https://github.com/quelpa/quelpa][quelpa]] with [[https://github.com/quelpa/quelpa-use-package][quelpa-use-package]]. Example basic configuration using quelpa:
 #+begin_src elisp
   (use-package org-super-links
-    :quelpa (org-super-links :repo "toshism/org-super-links" :fetcher github :commit "0.3")
-    :bind (("C-c s s" . sl-link)
-	   ("C-c s l" . sl-store-link)
-	   ("C-c s C-l" . sl-insert-link)))
+    :quelpa (org-super-links :repo "toshism/org-super-links" :fetcher github :commit "0.4")
+    :bind (("C-c s s" . org-super-links-link)
+         ("C-c s l" . org-super-links-store-link)
+         ("C-c s C-l" . org-super-links-insert-link)))
 #+end_src
 
 * Usage
